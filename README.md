@@ -10,7 +10,7 @@
 *Um chat de IA avançado que integra o Google Gemini com capacidades de busca inteligente na web*
 
 [Demonstração](#demonstração) • [Instalação](#instalação) • [Documentação](#documentação) • [Contribuição](#contribuição)
-
+![Screenshot 2025-06-05 23 24 40](https://github.com/user-attachments/assets/fe26829d-b69c-4977-a916-e90935467109)
 </div>
 
 ---
