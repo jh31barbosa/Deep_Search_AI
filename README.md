@@ -1,12 +1,18 @@
 Deep Search AI - Chat Inteligente com Flask
+
 Um chat de IA avançado que integra o Google Gemini com capacidades de busca inteligente na web, construído com Flask.
+
 🚀 Características Principais
 
 Chat Inteligente: Interface de conversação natural com IA usando Google Gemini
 Busca Web Inteligente: Detecta automaticamente quando precisa buscar informações atuais na web
+
 Múltiplas Conversas: Gerenciamento de conversas simultâneas com histórico
+
 Interface Moderna: Design responsivo e intuitivo com animações suaves
+
 Citação de Fontes: Referências automáticas quando usa informações da web
+
 Exportação: Capacidade de exportar conversas para arquivo texto
 
 🛠️ Tecnologias Utilizadas
@@ -25,17 +31,28 @@ Conta Google Cloud com Gemini API habilitada
 
 🔧 Instalação
 1. Clone o repositório
-bashgit clone https://github.com/seu-usuario/deep-search-ai.git
+
+bash
+git clone https://github.com/seu-usuario/deep-search-ai.git
+
 cd deep-search-ai
+
 2. Crie um ambiente virtual
-bashpython -m venv venv
+bash
+python -m venv venv
 source venv/bin/activate  # Linux/Mac
+
 # ou
 venv\Scripts\activate  # Windows
+
 3. Instale as dependências
-bashpip install -r requirements.txt
+bash
+pip install -r requirements.txt
+
 4. Configure as variáveis de ambiente
-bashcp .env.example .env
+bash
+cp .env.example .env
+
 Edite o arquivo .env com suas chaves de API:
 env# Obrigatório
 GEMINI_API_KEY=sua-chave-api-gemini-aqui
@@ -48,6 +65,7 @@ SEARCH_ENGINE_ID=seu-id-do-mecanismo-de-busca
 SECRET_KEY=uma-chave-secreta-forte
 FLASK_DEBUG=True
 PORT=5000
+
 5. Obtenha a chave da API do Gemini
 
 Acesse Google AI Studio
@@ -63,12 +81,19 @@ Crie credenciais (chave de API)
 Configure um mecanismo de busca personalizado em Programmable Search
 
 🚀 Execução
+
 Desenvolvimento
-bashpython app.py
+bash
+python app.py
+
 Produção
-bashgunicorn -w 4 -b 0.0.0.0:5000 app:app
+bash
+gunicorn -w 4 -b 0.0.0.0:5000 app:app
+
 Acesse http://localhost:5000 no seu navegador.
+
 📁 Estrutura do Projeto
+
 deep-search-ai/
 ├── app.py                 # Aplicação Flask principal
 ├── templates/
@@ -81,19 +106,27 @@ deep-search-ai/
 ├── .env.example          # Template de variáveis de ambiente
 ├── .gitignore           # Arquivos ignorados pelo Git
 └── README.md            # Este arquivo
+
 🎯 Como Usar
+
 Interface Principal
 
 Nova Conversa: Clique em "Nova Conversa" na barra lateral
+
 Digite sua Pergunta: Use o campo de entrada na parte inferior
+
 Busca Automática: O sistema detecta automaticamente quando precisa buscar informações atuais
+
 Histórico: Todas as conversas ficam salvas na barra lateral
+
 Exportar: Clique duplo em mensagens para copiar ou use as opções de exportação
 
 Funcionalidades Especiais
 
 Busca Inteligente: O sistema detecta palavras-chave como "atual", "hoje", "preço" e realiza buscas automáticas
+
 Citação de Fontes: Quando usa informações da web, cita as fontes automaticamente
+
 Contexto Mantido: Mantém o contexto da conversa para respostas mais precisas
 Atalhos de Teclado:
 
@@ -104,12 +137,16 @@ Duplo clique: Copiar mensagem
 
 
 🔧 Configuração Avançada
+
 Personalização do Sistema Prompt
 Edite a variável system_prompt na classe DeepSearchAI para personalizar o comportamento da IA.
+
 Configuração de Busca Web
 Ajuste os search_indicators no método should_search_web() para personalizar quando realizar buscas.
+
 Estilização
 Modifique o CSS no template HTML para personalizar a aparência.
+
 🐛 Troubleshooting
 Erro: "API Key inválida"
 
@@ -135,14 +172,28 @@ Monitore uso da API para evitar custos excessivos
 
 📈 Melhorias Futuras
 
- Autenticação de usuários
- Banco de dados persistente
- Cache de respostas
- Suporte a upload de arquivos
- API REST completa
- Webhooks para integrações
- Análise de sentimentos
- Suporte multilíngue
+ - Autenticação de usuários
+ - Banco de dados persistente
+ - Cache de respostas
+ - Suporte a upload de arquivos
+ - API REST completa
+ - Webhooks para integrações
+ - Análise de sentimentos
+ - Suporte multilíngue
+
+## Testes
+ - Gerenciamento de conversas
+ - Integração com a API do Gemini
+ - Busca na web
+ - Rotas da API Flask
+ - Tratamento de erros
+ - Gerenciamento de sessão
+
+# Instale as dependências necessárias:
+ - pip install pytest pytest-mock requests-mock
+
+# Execute os testes:
+ - pytest -v
 
 🤝 Contribuição
 
