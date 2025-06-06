@@ -323,9 +323,9 @@ Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](L
 
 **Desenvolvido com ❤️ para demonstrar integração entre Flask e Google Gemini API**
 
-- 🐙 GitHub: [@seu-usuario](https://github.com/seu-usuario)
-- 📧 Email: seu.email@exemplo.com
-- 💼 LinkedIn: [Seu Nome](https://linkedin.com/in/seu-perfil)
+- 🐙 GitHub: [@jh31barbosa](https://github.com/jh31barbosa)
+- 📧 Email: jh29.dev@gmail.com
+- 💼 LinkedIn: [José Henrique](https://linkedin.com/in/jh29-dev)
 
 ---
 
